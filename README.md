@@ -18,7 +18,7 @@ This package provides a convenient wrapper to the [Balldontlie API](https://www.
 To install this package tou can use composer:
 
 ```bash
-    composer require slvler/covalent
+    composer require slvler/balldontlie-laravel
 ```
 
 ## Usage
