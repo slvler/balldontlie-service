@@ -1,4 +1,4 @@
-# slvler - covalenthq Service
+# slvler - balldontlie Service
 
 [![tests](https://github.com/slvler/covalenthq-service/actions/workflows/tests.yml/badge.svg)](https://github.com/slvler/covalenthq-servicee/actions/workflows/tests.yml)
 [![Latest Stable Version](http://poser.pugx.org/slvler/covalent/v)](https://packagist.org/packages/slvler/covalent)
