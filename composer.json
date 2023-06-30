@@ -1,0 +1,54 @@
+{
+    "name": "slvler/balldontlie-laravel",
+    "description": "balldontlie API wrapper for Laravel",
+    "keywords": [
+        "balldontlie",
+        "laravel",
+        "php"
+    ],
+    "homepage": "https://github.com/slvler/balldontlie-service",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "slvler",
+            "email": "slvler@proton.me"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "guzzlehttp/guzzle": "^7.2",
+        "illuminate/support": "^9.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.6",
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slvler\\BalldontlieLaravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Slvler\\BalldontlieLaravel\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Slvler\\BalldontlieLaravel\\BalldontlieServiceProvider"
+            ],
+            "aliases": {
+                "Balldontlie": "Slvler\\BalldontlieLaravel\\Facades\\Balldontlie"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
