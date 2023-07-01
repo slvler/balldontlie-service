@@ -1,8 +1,8 @@
 # slvler - balldontlie Service
 
 [![tests](https://github.com/slvler/balldontlie-service/actions/workflows/tests.yml/badge.svg)](https://github.com/slvler/balldontlie-service/actions/workflows/tests.yml)
-[![Latest Stable Version](http://poser.pugx.org/slvler/covalent/v)](https://packagist.org/packages/slvler/covalent)
-[![Latest Unstable Version](http://poser.pugx.org/slvler/covalent/v/unstable)](https://packagist.org/packages/slvler/covalent)
+[![Latest Stable Version](http://poser.pugx.org/slvler/balldontlie-laravel/v)](https://packagist.org/packages/slvler/balldontlie-laravel)
+[![Latest Unstable Version](http://poser.pugx.org/slvler/balldontlie-laravel/v/unstable)](https://packagist.org/packages/slvler/balldontlie-laravel)
 [![License](http://poser.pugx.org/slvler/balldontlie-laravel/license)](https://packagist.org/packages/slvler/balldontlie-laravel)
 
 This package provides a convenient wrapper to the [Balldontlie API](https://www.balldontlie.io/home.html#introduction)  for Laravel applications.
