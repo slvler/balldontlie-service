@@ -1,9 +1,10 @@
-# slvler - balldontlie Service
+# balldontlie Service
 
 [![tests](https://github.com/slvler/balldontlie-service/actions/workflows/tests.yml/badge.svg)](https://github.com/slvler/balldontlie-service/actions/workflows/tests.yml)
-[![Latest Stable Version](http://poser.pugx.org/slvler/balldontlie-laravel/v)](https://packagist.org/packages/slvler/balldontlie-laravel)
-[![Latest Unstable Version](http://poser.pugx.org/slvler/balldontlie-laravel/v/unstable)](https://packagist.org/packages/slvler/balldontlie-laravel)
-[![License](http://poser.pugx.org/slvler/balldontlie-laravel/license)](https://packagist.org/packages/slvler/balldontlie-laravel)
+[![Latest Stable Version](https://poser.pugx.org/slvler/balldontlie-laravel/v)](https://packagist.org/packages/slvler/balldontlie-laravel)
+[![Latest Unstable Version](https://poser.pugx.org/slvler/balldontlie-laravel/v/unstable)](https://packagist.org/packages/slvler/balldontlie-laravel)
+[![License](https://poser.pugx.org/slvler/balldontlie-laravel/license)](https://packagist.org/packages/slvler/balldontlie-laravel)
+[![Total Downloads](https://poser.pugx.org/slvler/balldontlie-laravel/downloads)](https://packagist.org/packages/slvler/balldontlie-laravel)
 
 This package provides a convenient wrapper to the [Balldontlie API](https://www.balldontlie.io/home.html#introduction)  for Laravel applications.
 
@@ -17,17 +18,17 @@ This package provides a convenient wrapper to the [Balldontlie API](https://www.
 To install this package tou can use composer:
 
 ```bash
-    composer require slvler/balldontlie-laravel
+composer require slvler/balldontlie-laravel
 ```
 
 ## Usage
 
 #### Find player
-``` php
+```php
 Balldontlie::players(237);
 ```
 it returns an json with player:
-```
+```json
 {
   "data":[
     {
@@ -48,7 +49,6 @@ it returns an json with player:
         "name":"Lakers"
       }
     }
-    ...
  ],
  "meta": {
     "total_pages": 50,
@@ -60,14 +60,12 @@ it returns an json with player:
 }   
 ```
 
-
-
 #### Find team
-``` php
+```php
 Balldontlie::teams(14);
 ```
 it returns an json with team:
-```
+```json
 {
   "data": [
     {
@@ -78,8 +76,7 @@ it returns an json with team:
       "division":"Pacific",
       "full_name":"Los Angeles Lakers",
       "name":"Lakers"
-    },
-    ...
+    }
   ],
   "meta": {
     "total_pages": 1,
@@ -90,15 +87,12 @@ it returns an json with team:
   }
 }
 ```
-
-
-
 #### Find games
-``` php
+```php
 Balldontlie::games(1);
 ```
 it returns an json with games:
-```
+```json
 {
   "data": [
     {
@@ -128,9 +122,8 @@ it returns an json with games:
         "division":"Atlantic",
         "full_name":"Philadelphia 76ers",
         "name":"76ers"
-      },
-    },
-    ...
+      }
+    }
   ],
   "meta": {
     "total_pages": 1877,
@@ -142,15 +135,12 @@ it returns an json with games:
 }
 ```
 
-
-
-
 #### Find stats
-``` php
+```php
 Balldontlie::stats();
 ```
 it returns an json with stats:
-```
+```json
 {
   "data": [
     {
@@ -199,8 +189,7 @@ it returns an json with stats:
         "name":"76ers"
       },
       "turnover":5
-    },
-    ...
+    }
   ],
   "meta": {
     "total_pages": 2042,
@@ -212,16 +201,15 @@ it returns an json with stats:
 }
 ```
 
-
 ## Testing
 
 ```bash
-    composer test
+composer test
 ```
 
 ## Credits
 
--   [slvler](https://github.com/slvler)
+- [slvler](https://github.com/slvler)
 
 ## License
 
